@@ -1,11 +1,9 @@
 <template>
-  <div class="container h-screen">
-    Hey
-  </div>
+  <div class="container h-screen">About Me</div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style>
@@ -14,6 +12,4 @@ export default {}
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-
-
 </style>

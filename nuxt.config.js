@@ -8,6 +8,7 @@ export default {
   router: {
     base: '/'
   },
+  components: true,
   /*
   ** Nuxt target
   ** See https://nuxtjs.org/api/configuration-target
