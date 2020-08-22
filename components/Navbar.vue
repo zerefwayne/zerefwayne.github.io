@@ -14,29 +14,23 @@
       </button>
     </div>
     <div class="lg:flex lg:items-center lg:w-auto">
-      <div class="text-sm lg:flex-grow">
+      <div class="text-sm lg:flex-grow navbar-links">
         <nuxt-link
           to="/projects"
-          class="text-xl block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-black mr-4"
+          class="projects text-xl block px-5 py-2 rounded lg:inline-block lg:mt-0 text-gray-800 hover:text-black"
         >Projects</nuxt-link>
         <nuxt-link
           to="/blogs"
-          class="text-xl block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-black mr-4"
+          class="blogs text-xl block lg:inline-block px-5 py-2 rounded lg:mt-0 text-gray-800 hover:text-black"
         >Blogs</nuxt-link>
         <nuxt-link
           to="/design"
-          class="text-xl block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-black mr-4"
+          class="design text-xl block lg:inline-block px-5 py-2 rounded lg:mt-0 text-gray-800 hover:text-black"
         >Design</nuxt-link>
         <nuxt-link
           to="/about"
-          class="text-xl block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-black mr-4"
+          class="about text-xl block lg:inline-block px-5 py-2 rounded lg:mt-0 text-gray-800 hover:text-black"
         >About Me</nuxt-link>
-      </div>
-      <div>
-        <a
-          href="#"
-          class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
-        >Download</a>
       </div>
     </div>
   </nav>
@@ -47,4 +41,23 @@ export default {};
 </script>
 
 <style lang="scss">
+.navbar-links .active-link {
+    transition: all 200ms ease-in;
+  &.projects {
+    background-color: #0052cc;
+    color: white;
+  }
+  &.design {
+    background-color: #172b4d;
+    color: white;
+  }
+  &.about {
+    background-color: #FF5630;
+    color: white;
+  }
+  &.blogs {
+    background-color: #6554C0;
+    color: white;
+  }
+}
 </style>

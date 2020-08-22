@@ -4,9 +4,10 @@ export default {
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
   */
-  mode: 'spa',
+  mode: 'universal',
   router: {
-    base: '/'
+    base: '/',
+    linkActiveClass: 'active-link'
   },
   components: true,
   /*
@@ -19,7 +20,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: "Aayush Joglekar - Developer Portfolio",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
